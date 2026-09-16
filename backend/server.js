@@ -144,11 +144,9 @@ io.on("connection", (socket) => {
 // ==========================================
 
 const PORT = process.env.PORT || 3000;
-
 // ==========================================
 // CONECTAR MONGODB Y ENCENDER SERVIDOR
 // ==========================================
-
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
