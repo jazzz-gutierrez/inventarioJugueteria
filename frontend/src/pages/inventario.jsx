@@ -64,7 +64,7 @@ function Inventario() {
   // ==========================================
 
   useEffect(() => {
-    const nuevaConexion = io("http://192.168.1.79:3000");
+    const nuevaConexion = io("https://inventariojugueteria.onrender.com");
 
     nuevaConexion.on("connect", () => {
       console.log("Inventario conectado al escáner");
